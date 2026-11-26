@@ -1,562 +1,796 @@
+npm i @vercel/analytics
 <!DOCTYPE html>
 <html lang="mr">
-<head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1777564805682466"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🕉️ श्री भैरैश्वर मंदिर, शिरटी</title>
-    <link rel="stylesheet" href="style.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1777564805682466"
-     crossorigin="anonymous"></script>
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1777564805682466"
-crossorigin="anonymous"></script>
-<meta name="google-adsense-account" content="ca-pub-1777564805682466">
-     
-     </head>
-     <head>
-       </head>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bhaireshwar Temple</title>
+<title>श्री भैरेश्वर मंदिर | शिरटी</title>
+<meta name="description" content="श्री भैरेश्वर मंदिर, शिरटी. श्रद्धा, भक्ती आणि परंपरेचे ग्रामदैवत.">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFZ564KD');
+</script>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0c0c0f;
-  color: white;
+:root {
+  --green: #6B263D;
+  --green-dark: #102b20;
+  --gold: #d9a441;
+  --cream: #f8f3e8;
+  --white: #ffffff;
+  --text: #26372d;
+  --muted: #68756c;
 }
 
-/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hind Vadodara', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background: rgba(20, 20, 30, 0.9);
-  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: var(--green-dark);
+  box-shadow: 0 3px 18px #0002;
 }
 
-/* Title */
-.title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #ffcc00;
+.navbar {
+  max-width: 1250px;
+  margin: auto;
+  padding: 12px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Menu Button */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.brand h2 {
+  font-size: 19px;
+  color: #f5d58a;
+}
+
+.brand p {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
 .menu-btn {
-  background: linear-gradient(45deg, #ff0000, #ff6600);
-  border: none;
-  padding: 10px 15px;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.menu-btn:hover {
-  transform: scale(1.1);
-}
-
-/* Nav */
-#nav {
-  position: absolute;
-  top: 70px;
-  left: 20px;
-  background: #1a1a2e;
-  padding: 15px;
-  border-radius: 15px;
   display: none;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
-  animation: fadeIn 0.3s ease;
+  background: var(--gold);
+  border: none;
+  color: #172b20;
+  font-size: 23px;
+  padding: 5px 12px;
+  border-radius: 7px;
 }
 
-#nav a {
-  display: block;
+/* HERO */
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background:
+    linear-gradient(#10251bd9, #10251b9c),
+    url('https://i.ibb.co/r2V4DSJY/Screenshot-20251106-090747.jpg')
+    center/cover no-repeat;
+  padding: 60px 20px;
   color: white;
-  text-decoration: none;
-  margin: 8px 0;
-  transition: 0.3s;
 }
 
-#nav a:hover {
-  color: #ffcc00;
-  transform: translateX(5px);
+.hero-content {
+  max-width: 850px;
 }
 
-/* Image */
-.temple-img {
-  height: 220px;
+.om {
+  color: var(--gold);
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 58px);
+  color: #f5d58a;
+  line-height: 1.35;
+}
+
+.hero h2 {
+  font-size: clamp(21px, 4vw, 35px);
+  margin-top: 12px;
+}
+
+.hero p {
+  font-size: 19px;
+  margin: 18px 0 28px;
+  color: #eee;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #172b20;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.hero-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+  background: var(--green);
+  color: white;
+  padding: 13px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.announcement span {
+  color: #f5d58a;
+}
+
+/* COMMON SECTION */
+
+.section {
+  padding: 75px 6%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-title span {
+  color: #b17b26;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  color: var(--green);
+  margin-top: 7px;
+}
+
+.section-title p {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  background: white;
+  padding: 28px 18px;
+  text-align: center;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+  border-bottom: 4px solid var(--gold);
+  box-shadow: 0 5px 25px #183c2d12;
+  transition: .3s;
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+.about-card:hover {
+  transform: translateY(-8px);
 }
 
-/* Mobile */
-@media(max-width:600px){
-  .title {
-    font-size: 14px;
+.about-card .icon {
+  font-size: 38px;
+}
+
+.about-card h3 {
+  color: var(--green);
+  margin: 12px 0 7px;
+  font-size: 20px;
+}
+
+.about-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.gold-btn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 11px 25px;
+  border-radius: 25px;
+  margin-top: 28px;
+  transition: .3s;
+}
+
+.gold-btn:hover {
+  background: var(--gold);
+  color: #172b20;
+}
+
+/* AARTI */
+
+.aarti-section {
+  background: var(--green);
+  padding: 65px 6%;
+  text-align: center;
+}
+
+.aarti-section .section-title h2 {
+  color: #f5d58a;
+}
+
+.aarti-section .section-title p {
+  color: #ddd;
+}
+
+.aarti-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.aarti-card {
+  background: #ffffff;
+  width: 270px;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid var(--gold);
+}
+
+.aarti-card .icon {
+  font-size: 38px;
+}
+
+.aarti-card h3 {
+  color: var(--green);
+  margin: 10px;
+}
+
+.aarti-card p {
+  color: #9b6c20;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  height: 260px;
+  background: #ddd;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-card .caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 10px 12px;
+  color: white;
+  background: linear-gradient(transparent, #000d);
+  font-size: 16px;
+}
+
+/* STOTRA */
+
+.stotra-section {
+  background: #f0e7d4;
+  padding: 70px 6%;
+}
+
+.stotra-box {
+  max-width: 850px;
+  margin: auto;
+  padding: 35px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #e3c78e;
+  box-shadow: 0 8px 25px #0000000c;
+}
+
+.stotra-box p {
+  font-size: 19px;
+  line-height: 2;
+  margin-bottom: 22px;
+  color: #354b3d;
+}
+
+.stotra-box span {
+  color: #b17b26;
+  font-weight: 700;
+}
+
+.stotra-end {
+  color: #9a681b !important;
+  font-weight: 700;
+}
+
+/* LOCATION */
+
+.map-container {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px #0002;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 380px;
+  border: 0;
+}
+
+.map-link {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact-card {
+  padding: 28px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px #0000000c;
+  border-top: 4px solid var(--gold);
+}
+
+.contact-card h3 {
+  color: var(--green);
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--green-dark);
+  color: white;
+  padding: 55px 6% 20px;
+}
+
+.footer-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 35px;
+}
+
+footer h3, footer h4 {
+  color: #f5d58a;
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.footer-links {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid #ffffff30;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 35px;
+  font-size: 14px;
+}
+
+.counter {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+  .nav-links {
+    gap: 12px;
   }
-  .temple-img {
-    height: 150px;
+
+  .about-grid,
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-card {
+    height: 230px;
+  }
+}
+
+@media(max-width: 700px) {
+  .navbar {
+    padding: 12px 4%;
+  }
+
+  .brand h2 {
+    font-size: 15px;
+  }
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 4%;
+    right: 4%;
+    padding: 15px;
+    background: var(--green-dark);
+    border: 1px solid #d9a44170;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 11px;
+    border-bottom: 1px solid #ffffff18;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 55px 5%;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .about-card {
+    padding: 20px 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-card {
+    height: 190px;
+  }
+
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container iframe {
+    height: 280px;
+  }
+}
+
+@media(max-width: 380px) {
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
-<script>
-function toggleMenu() {
-  let nav = document.getElementById("nav");
-  nav.style.display = nav.style.display === "block" ? "none" : "block";
-}
-
-// Close when clicking anywhere outside
-document.addEventListener("click", function(event) {
-  const nav = document.getElementById("nav");
-  const button = document.querySelector(".menu-btn");
-
-  if (!nav.contains(event.target) && !button.contains(event.target)) {
-    nav.style.display = "none";
-  }
-});
-</script>
 </head>
 
 <body>
 
+<!-- GTM NOSCRIPT -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFZ564KD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- HEADER -->
 <header>
+<nav class="navbar">
 
-  <!-- Left -->
-  <div>
-    <div class="title">🕉️ Shree Bhaireshwar Temple</div>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <div id="nav">
-      <a href="#मुख्यपृष्ठ">मुख्यपृष्ठ</a>
-      <a href="#अधिक माहिती">अधिक माहिती</a>
-      <a href="#आरतीची वेळ">आरतीची वेळ</a>
-      <a href="#छायाचित्रे">छायाचित्रे</a>
-      <a href="#स्तोत्र">स्तोत्र</a>
-      <a href="#संपर्क">संपर्क</a>
+  <a href="#home" class="brand">
+    <div class="brand-icon">ॐ</div>
+    <div>
+      <h2>श्री भैरेश्वर मंदिर</h2>
+      <p>शिरटी, ता. शिरोळ, जि. कोल्हापूर</p>
     </div>
+  </a>
+
+  <button class="menu-btn" id="menuBtn"
+  aria-label="मेनू उघडा" aria-expanded="false"
+  aria-controls="navLinks">☰</button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home">मुख्यपृष्ठ</a>
+    <a href="#about">मंदिराबद्दल</a>
+    <a href="#aarti">आरतीची वेळ</a>
+    <a href="#gallery">छायाचित्रे</a>
+    <a href="#stotra">स्तोत्र</a>
+    <a href="#location">स्थान</a>
+    <a href="#contact">संपर्क</a>
   </div>
 
-  <!-- Right -->
-  <img class="temple-img" src="https://i.ibb.co/mCTK1DPv/IMG-20251201-144923.jpg">
-
+</nav>
 </header>
 
-<script>
-function toggleMenu() {
-  let nav = document.getElementById("nav");
-  nav.style.display = nav.style.display === "block" ? "none" : "block";
-}
-</script>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
 
-</body>
-</html>
-<hr>
-<style>
-  .hero {
-  position: relative;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    <div class="om">🕉️</div>
 
-  /* Background Image */
-  background: url('https://i.ibb.co/r2V4DSJY/Screenshot-20251106-090747.jpg') no-repeat center/cover;
-  color: white;
-  overflow: hidden;
-}
+    <h1>शिरटी आपलं गाव</h1>
+    <h2>इथं फक्त भैरोबाचं नाव…!</h2>
 
-/* Overlay (important for readability) */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6); /* darkness level */
-  z-index: 1;
-}
+    <p>श्री भैरेश्वर मंदिर, शिरटी आपले सहर्ष स्वागत करीत आहे.</p>
 
-/* Content above overlay */
-.hero * {
-  position: relative;
-  z-index: 2;
-}
+    <a href="#about" class="hero-btn">मंदिराबद्दल जाणून घ्या →</a>
 
-/* Title */
-.main-title {
-  font-size: 28px;
-  color: #ffcc00;
-}
-
-.main-title span {
-  color: #ff007f;
-}
-
-/* Announcement */
-.announcement {
-  margin: 15px 0;
-  background: rgba(255, 0, 127, 0.8);
-  padding: 10px 15px;
-  border-radius: 8px;
-  animation: scrollText 12s linear infinite;
-  white-space: nowrap;
-}
-
-/* Animation */
-@keyframes scrollText {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* Subtitle */
-.subtitle {
-  color: #ddd;
-  margin-top: 10px;
-}
-</style>
-<section id="home" class="hero">
-
-  <h1 class="main-title">
-    शिरटी आपलं गाव <br>
-    <span>इथं फक्त भैरोबाचं नाव…!</span>
-  </h1>
-
-  <div class="announcement">
-    श्री भैरैश्वर मंदिर, शिरटी आपले सहर्ष स्वागत करीत आहे.
   </div>
-
-  <p class="subtitle">
-    🕉️ शांती • भक्ती • आध्यात्मिकता
-  </p>
-
 </section>
 
-<style>
-  #about {
-  padding: 30px 15px;
-  text-align: center;
-  background: #0c0c0f;
-  color: white;
-}
+<div class="announcement">
+  🙏 <span>श्री भैरेश्वर प्रसन्न</span> 🙏
+  | श्रद्धा • भक्ती • आध्यात्मिकता
+</div>
 
-#about h2 {
-  color: #ffcc00;
-  margin-bottom: 20px;
-}
+<!-- ABOUT -->
+<section class="section" id="about">
 
-/* Grid */
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-}
+  <div class="section-title">
+    <span>OUR TEMPLE</span>
+    <h2>🖋️ मंदिराबद्दल</h2>
+    <p>शिरटी गावाचे श्रद्धास्थान आणि ग्रामदैवत</p>
+  </div>
 
-/* Cards */
-.about-card {
-  background: #1a1a1f;
-  padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
-  box-shadow: 0 0 10px rgba(255,204,0,0.1);
-}
-
-.about-card span {
-  font-size: 24px;
-}
-
-.about-card h3 {
-  color: #ffcc00;
-  margin: 10px 0 5px;
-  font-size: 16px;
-}
-
-.about-card p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* Hover effect */
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(255,204,0,0.3);
-}
-
-/* Button */
-.about-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ffcc00;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.about-btn:hover {
-  background: white;
-}
-</style>
-<section id="about">
-     <section id="अधिक माहिती">
-
-
-  <h2>🖋️ मंदिराबद्दल</h2>
-
-  <div class="about-container">
+  <div class="about-grid">
 
     <div class="about-card">
-      <span>🙏</span>
+      <div class="icon">🙏</div>
       <h3>मुख्य देवता</h3>
       <p>श्री भैरेश्वर (भैरवनाथ)</p>
     </div>
 
     <div class="about-card">
-      <span>🏡</span>
+      <div class="icon">🏡</div>
       <h3>ग्रामदैवत</h3>
       <p>शिरटी गावाचे मुख्य ग्रामदैवत</p>
     </div>
 
     <div class="about-card">
-      <span>🕉️</span>
+      <div class="icon">🕉️</div>
       <h3>स्वरूप</h3>
       <p>भगवान शंकराचे उग्र रूप, क्षेत्रपाल म्हणून पूजा</p>
     </div>
 
     <div class="about-card">
-      <span>🌟</span>
+      <div class="icon">🌟</div>
       <h3>प्रसिद्धी</h3>
-      <p>लाखो भाविकांचे श्रद्धास्थान, “श्री भैरेश्वर प्रसन्न” जयघोष</p>
+      <p>लाखो भाविकांचे श्रद्धास्थान, श्री भैरेश्वर प्रसन्न जयघोष</p>
     </div>
 
   </div>
 
-  <a href="अधिक माहिती.html" class="about-btn">📖 अधिक माहिती</a>
-
-  <hr>
+  <center>
+    <a href="अधिक माहिती.html" class="gold-btn">📖 अधिक माहिती वाचा</a>
+  </center>
 
 </section>
-<style>
-.aarti-section {
-    text-align: center;
-    padding: 30px 15px;
-    background: #0c0c0f;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
 
-.aarti-section h2 {
-    color: #ffcc00;
-}
+<!-- AARTI -->
+<section class="aarti-section" id="aarti">
 
-.aarti-card {
-    background: #1a1a22;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 15px auto;
-    max-width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-}
-</style>
+  <div class="section-title">
+    <span>DAILY WORSHIP</span>
+    <h2>🪔 आरतीची वेळ</h2>
+    <p>दररोज होणाऱ्या आरतीचे वेळापत्रक</p>
+  </div>
 
-<section class="आरतीची वेळ">
-     <section id="आरतीची वेळ">
-    <h2>🕔 आरतीची वेळ</h2>
+  <div class="aarti-grid">
 
     <div class="aarti-card">
-        <p>🌅 सकाळ: 6:00 AM</p>
-        <p>🌇 संध्याकाळ: 7:00 PM</p>
-    </div>
-    </section>
-</section>
-<!-- photo section-->
-<style>
-  body {
-  background: #0c0c0f;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  margin: 0;
-}
-
-/* Section */
-#gallery {
-  padding: 30px 15px;
-  text-align: center;
-}
-
-#gallery h2 {
-  color: #ffcc00;
-  margin-bottom: 20px;
-}
-
-/* Grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
-}
-
-/* Card */
-.card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: 0.4s;
-}
-
-/* Overlay */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
-}
-
-/* Hover Effect */
-.card:hover img {
-  transform: scale(1.1);
-}
-
-/* Button */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ffcc00;
-  color: black;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: white;
-}
-</style>
-<hr>
-
-  <h1 style="text-align:center; color:#ffcc00;">📸 छायाचित्रे </h1>
-   <section id="छायाचित्रे">
-  <div class="gallery">
-
-    <!-- Card -->
-    <div class="card">
-      <img src="https://i.ibb.co/r2V4DSJY/Screenshot-20251106-090747.jpg">
-      <div class="overlay">जुने मंदिर</div>
+      <div class="icon">🌅</div>
+      <h3>सकाळची आरती</h3>
+      <p>6:00 AM</p>
     </div>
 
-    <div class="card">
-      <img src="https://i.ibb.co/BKvCDzBs/IMG-20251105-WA0111.jpg">
-      <div class="overlay">दिपोत्सव २०२५</div>
+    <div class="aarti-card">
+      <div class="icon">🌇</div>
+      <h3>संध्याकाळची आरती</h3>
+      <p>7:00 PM</p>
     </div>
 
-    <div class="card">
-      <img src="https://i.ibb.co/NnVgPGjx/1775371305337.png">
-      <div class="overlay"></div>
-    </div>
-
-    <div class="card">
-      <img src="https://i.ibb.co/v4zBmtwS/1775371309512.png">
-      <div class="overlay">यात्रा पत्रिका 2026</div>
-    </div>
-    </section>
   </div>
 
-  <a href="छायाचित्र.html" class="btn">सर्व छायाचित्रे पहा</a>
 </section>
 
-      <hr>
-    <section id="स्तोत्र">
-      <div class="श्री कालभैरव स्तोत्र">
-<section class="stotra-section">
-<style>
-  .stotra-section {
-  padding: 20px 15px;
-  text-align: center;
-  background: #0c0c0f;
-  color: white;
-}
+<!-- GALLERY -->
+<section class="section" id="gallery">
 
-.stotra-section h2 {
-  color: #ffcc00;
-  margin-bottom: 20px;
-}
+  <div class="section-title">
+    <span>TEMPLE GALLERY</span>
+    <h2>📸 छायाचित्रे</h2>
+    <p>मंदिरातील सुंदर क्षण आणि आठवणी</p>
+  </div>
 
-/* Main Box */
-.stotra-box {
-  background: #1a1a1f;
-  padding: 20px;
-  border-radius: 12px;
-  line-height: 1.9;
-  font-size: 17px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(255,204,0,0.1);
-}
+  <div class="gallery">
 
-/* Each verse */
-.stotra-box p {
-  margin-bottom: 18px;
-}
+    <div class="gallery-card">
+      <img src="https://i.ibb.co/r2V4DSJY/Screenshot-20251106-090747.jpg"
+      alt="श्री भैरेश्वर मंदिर" loading="lazy">
+      <div class="caption">जुने मंदिर</div>
+    </div>
 
-/* Verse numbers */
-.stotra-box span {
-  color: #ffcc00;
-  font-weight: bold;
-}
+    <div class="gallery-card">
+      <img src="https://i.ibb.co/BKvCDzBs/IMG-20251105-WA0111.jpg"
+      alt="दिपोत्सव 2025" loading="lazy">
+      <div class="caption">दिपोत्सव २०२५</div>
+    </div>
 
-/* Ending */
-.end {
-  margin-top: 20px;
-  font-weight: bold;
-  color: #ffcc00;
-}
+    <div class="gallery-card">
+      <img src="https://i.ibb.co/NnVgPGjx/1775371305337.png"
+      alt="मंदिराचे छायाचित्र" loading="lazy">
+      <div class="caption">मंदिर दर्शन</div>
+    </div>
 
-/* Button */
-.meaning-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ffcc00;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    <div class="gallery-card">
+      <img src="https://i.ibb.co/v4zBmtwS/1775371309512.png"
+      alt="यात्रा पत्रिका 2026" loading="lazy">
+      <div class="caption">यात्रा पत्रिका २०२६</div>
+    </div>
 
-.meaning-btn:hover {
-  background: white;
-}
-</style>
-  <h2>🕉️ श्री कालभैरव स्तोत्र</h2>
+  </div>
+
+  <center>
+    <a href="छायाचित्र.html" class="gold-btn">सर्व छायाचित्रे पहा →</a>
+  </center>
+
+</section>
+
+<!-- STOTRA -->
+<section class="stotra-section" id="stotra">
+
+  <div class="section-title">
+    <span>DIVINE PRAYER</span>
+    <h2>🕉️ श्री कालभैरव स्तोत्र</h2>
+    <p>श्री कालभैरव चरणी समर्पित</p>
+  </div>
 
   <div class="stotra-box">
 
@@ -630,197 +864,161 @@ function toggleMenu() {
       नमोऽनंत प्रबोधाय भैरवाय नमो नमः ॥ <span>१४</span> ॥
     </p>
 
-    <p class="end">
+    <p class="stotra-end">
       ॥ श्री कालभैरव स्तोत्र संपूर्णम् ॥<br>
       ॥ श्री कालभैरवार्पणमस्तु ॥<br>
       🌼 शुभं भवतु 🌼
     </p>
 
+    <a href="अर्थ.html" class="gold-btn">📖 मराठी अर्थ वाचा</a>
+
   </div>
 
-  <a href="अर्थ.html" class="meaning-btn">📖 मराठी अर्थ वाचा</a>
-
 </section>
-  <hr>
-    <!-- Google map Location -->
-    <style>
-  #location {
-  padding: 30px 15px;
-  text-align: center;
-  background: #0c0c0f;
-  color: white;
-}
 
-#location h2 {
-  color: #ffcc00;
-  margin-bottom: 10px;
-}
+<!-- LOCATION -->
+<section class="section" id="location">
 
-/* Map Box */
-.map-container {
-  margin-top: 15px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(255,204,0,0.2);
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 250px;
-  border: 0;
-}
-
-/* Button */
-.map-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #ffcc00;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.map-btn:hover {
-  background: white;
-}
-</style>
-<section id="location">
-
-  <h2>📍 मंदिर स्थान</h2>
-  <p>श्री भैरैश्वर मंदिर येथे भेट द्या</p>
+  <div class="section-title">
+    <span>VISIT OUR TEMPLE</span>
+    <h2>📍 मंदिर स्थान</h2>
+    <p>श्री भैरेश्वर मंदिर, शिरटी येथे भेट द्या</p>
+  </div>
 
   <div class="map-container">
-    <iframe 
+    <iframe
       src="https://www.google.com/maps?q=Shri+Bhaireshwar+Temple+Shirati&output=embed"
-      allowfullscreen=""
-      loading="lazy">
+      loading="lazy"
+      title="श्री भैरेश्वर मंदिर नकाशा"
+      allowfullscreen>
     </iframe>
   </div>
 
-  <a href="https://maps.app.goo.gl/RwV8ALs3nmdzTdCu8?g_st=ac" 
-     target="_blank" 
-     class="map-btn">
-     📌 Google Maps मध्ये उघडा
-  </a>
-
-</section>
-<h1 style="text-align:center; color:#ffcc00;">📞 संपर्क करा</h1>
-
-<section id="संपर्क" class="contact-section">
-
-  <div class="contact-card">
-    <h3>🛕 मंदिराचे नाव</h3>
-    <p>श्री भैरेश्वर मंदिर, शिरटी</p>
-  </div>
-
-  <div class="contact-card">
-    <h3>📍 ठिकाण</h3>
-    <p>शिरटी ता. शिरोळ, जि. कोल्हापूर, महाराष्ट्र</p>
-  </div>
-
-  <div class="contact-card">
-    <h3>ℹ️ सूचना</h3>
-    <p>
-      मंदिरासंबंधी माहिती किंवा चौकशीसाठी भाविकांनी नियमित दर्शन वेळेत
-      मंदिरात प्रत्यक्ष भेट द्यावी, अशी विनंती आहे.
-    </p>
-  </div>
+  <center>
+    <a href="https://maps.app.goo.gl/J6Y5ogzRU7xhavei7?g_st=ac"
+       target="_blank" rel="noopener noreferrer"
+       class="map-link">
+       📌 Google Maps मध्ये उघडा
+    </a>
+  </center>
 
 </section>
 
-<style>
-.contact-section {
-  display: grid;
-  gap: 20px;
-  padding: 20px;
-}
+<!-- CONTACT -->
+<section class="section" id="contact">
 
-/* Card Design */
-.contact-card {
-  background: linear-gradient(145deg, #1a1a2e, #111);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
-  transition: 0.3s;
-}
+  <div class="section-title">
+    <span>GET IN TOUCH</span>
+    <h2>📞 संपर्क करा</h2>
+    <p>मंदिराविषयी आवश्यक माहिती</p>
+  </div>
 
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(255, 204, 0, 0.5);
-}
+  <div class="contact-grid">
 
-.contact-card h3 {
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
+    <div class="contact-card">
+      <h3>🛕 मंदिराचे नाव</h3>
+      <p>श्री भैरेश्वर मंदिर, शिरटी</p>
+    </div>
 
-.contact-card p {
-  color: #ddd;
-  line-height: 1.6;
-}
+    <div class="contact-card">
+      <h3>📍 ठिकाण</h3>
+      <p>शिरटी, ता. शिरोळ,<br>
+      जि. कोल्हापूर, महाराष्ट्र</p>
+    </div>
 
-/* Desktop Layout */
-@media(min-width: 600px){
-  .contact-section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-</style>
-<hr>
-    
+    <div class="contact-card">
+      <h3>ℹ️ सूचना</h3>
+      <p>
+        मंदिरासंबंधी माहिती किंवा चौकशीसाठी भाविकांनी
+        नियमित दर्शन वेळेत मंदिरात प्रत्यक्ष भेट द्यावी.
+      </p>
+    </div>
 
-    <link rel="stylesheet" href="footer.css">
-<footer class="footer">
+  </div>
 
-  <div class="footer-container">
+</section>
 
-    <!-- Temple Info -->
-    <div class="footer-section">
-      <h3>🙏 श्री भैरैश्वर मंदिर</h3>
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>🙏 श्री भैरेश्वर मंदिर</h3>
+      <p>शिरटी आपलं गाव, इथं फक्त भैरोबाचं नाव…!</p>
       <p>श्रद्धा • परंपरा • संस्कृती</p>
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-section">
+    <div>
       <h4>जलद दुवे</h4>
-      <a href="#">मुख्यपृष्ठ</a>
-      <a href="#">आरती</a>
-      <a href="#">उत्सव</a>
-      <a href="#">संपर्क</a>
+      <div class="footer-links">
+        <a href="#home">मुख्यपृष्ठ</a>
+        <a href="#about">मंदिराबद्दल</a>
+        <a href="#aarti">आरतीची वेळ</a>
+        <a href="#gallery">छायाचित्रे</a>
+        <a href="#stotra">स्तोत्र</a>
+        <a href="#contact">संपर्क</a>
+      </div>
     </div>
 
-    <!-- Developer Credit -->
-    <div class="footer-section">
-      <h4>Design & Developed By</h4>
-      <p>Sanskar Suryavanshi & Team </p>
+    <div>
+      <h4>Website Credits</h4>
+      <p>Design & Developed By</p>
+      <p><strong>Sanskar Suryavanshi & Team</strong></p>
     </div>
 
   </div>
 
-  <!-- Bottom Bar -->
   <div class="footer-bottom">
-    <p>© 2026 श्री भैरैश्वर मंदिर | सर्व हक्क राखीव</p>
+    <p>© 2026 श्री भैरेश्वर मंदिर, शिरटी | सर्व हक्क राखीव</p>
+    <p>॥ श्री भैरेश्वर प्रसन्न ॥</p>
   </div>
 
   <!-- Visitor Counter -->
   <div class="counter">
-    <script type="text/javascript">
-      var sc_project=13214593; 
-      var sc_invisible=0; 
-      var sc_security="32d58132"; 
-      var scJsHost = "https://";
-      document.write("<sc"+"ript src='" + scJsHost+
+    <script>
+      var sc_project=13214593;
+      var sc_invisible=0;
+      var sc_security="32d58132";
+      var scJsHost="https://";
+      document.write("<sc"+"ript src='"+scJsHost+
       "statcounter.com/counter/counter.js'></"+"script>");
     </script>
-
     <noscript>
-      <img src="https://c.statcounter.com/13214593/0/32d58132/0/" alt="counter">
+      <img src="https://c.statcounter.com/13214593/0/32d58132/0/"
+      alt="Visitor counter">
     </noscript>
   </div>
 
 </footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function() {
+  const isOpen = navLinks.classList.toggle("active");
+  menuBtn.setAttribute("aria-expanded", isOpen);
+  menuBtn.textContent = isOpen ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  });
+});
+
+document.addEventListener("click", function(event) {
+  if (!navLinks.contains(event.target) &&
+      !menuBtn.contains(event.target)) {
+    navLinks.classList.remove("active");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  }
+});
+</script>
+
 </body>
 </html>
